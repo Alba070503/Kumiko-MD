@@ -1,28 +1,27 @@
-import fetch from 'node-fetch';
+import fetch from 'node-fetch'
 
-const handler = async (m, {conn, text, usedPrefix, command}) => {
-  if (!text) {
-    throw `_*< IA - BARD />*_\n\n*[ ℹ️ ] Proporciona un texto.*\n\n*[ 💡 ] Ejemplo:* _${usedPrefix + command} Hola Bard, ¿cómo estás?_`;
-  }
+var handler = async (m, { text,  usedPrefix, command }) => {
 
-  try {
-    conn.sendPresenceUpdate('composing', m.chat);
+if (!text) throw `*⚠️ INGRESE UN TEXTO PARA GENERAR* `
 
-    const API_URL = `https://vihangayt.me/tools/bard?q=${encodeURIComponent(text)}`;
-    const response = await fetch(API_URL);
-    const data = await response.json();
+try {
 
-    if (data.status && data.data) {
-      const respuestaAPI = data.data;
-      conn.reply(m.chat, respuestaAPI, m);
-    } else {
-      throw '_*< IA - BARD />*_\n\n*[ ℹ️ ] No se pudo obtener una respuesta válida.*';
-    }
-  } catch (error) {
-    throw `_*< IA - BARD />*_\n\n*[ ℹ️ ] Ocurrió un error. Por favor, inténtalo de nuevo más tarde.*`;
-  }
-};
+//await m.reply('*🚀 C A R G A N D O*')
+conn.sendPresenceUpdate('composing', m.chat)
+var apii = await fetch(`https://aemt.me/bard?text=${text}`)
+var res = await apii.json()
+await m.reply(res.result)
 
-handler.command = /^bard$/i;
+} catch (error) {
+console.error(error)
+throw '⚠️ *OCURRIÓ UN ERROR*'
+}
 
-export default handler;
+}
+handler.command = ['bard']
+handler.help = ['bard']
+handler.tags = ['ai']
+
+handler.premium = false
+
+export default handler
