@@ -11,9 +11,9 @@ global.botnumber = ""
 global.confirmCode = ""
 
 global.owner = [
-  ['59177601773', '👑 Mystic - Creador 👑', true],
+  ['59177601773', '👑 Alba070503 - Creador 👑', true],
   ['59169082575', '💫 Mystic - Collaborator 1 💫', true],
-  ['51940617554', '💫 Mystic - Collaborator 2 💫', true],
+  ['59165892573', '💫 Mystic - Collaborator 2 💫', true],
   ['51996089079', '💫 Mystic - Collaborator 3 💫', true],
   ['5218442286089', '💫 Mystic - Collaborator 4 💫', true],
   ['50246028932', '💫 Mystic - Collaborator 5 💫', true],
@@ -44,10 +44,10 @@ global.prems = ['51995386439'];
 
 global.packname = 'NamiBot-MD';
 global.author = 'By @Alba070503';
-global.wm = 'NamiBot-MD : Alba070503';
-global.titulowm = 'NamiBot-MD : Alba070503';
-global.titulowm2 ='NamiBot-MD : Alba070503`
-global.igfg = 'NamiBot-MD : Alba070503';
+global.wm = 'NamiBot-MD';
+global.titulowm = 'NamiBot-MD';
+global.titulowm2 = 'NamiBot-MD';
+global.igfg = 'NamiBot-MD';
 global.wait = '*[ ⏳ ] Cargando...*';
 
 global.imagen1 = fs.readFileSync('./Menu2.jpg');
@@ -68,11 +68,11 @@ global.mes = d.toLocaleDateString('es', {month: 'long'});
 global.año = d.toLocaleDateString('es', {year: 'numeric'});
 global.tiempo = d.toLocaleString('en-US', {hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: true});
 //* ****************************
-global.wm2 = `${dia} ${fecha}\nThe Mystic - Bot`;
-global.gt = 'The Mystic - Bot';
-global.mysticbot = 'The Mystic - Bot';
-global.md = 'https://github.com/BrunoSobrino/TheMystic-Bot-MD';
-global.mysticbot = 'https://github.com/BrunoSobrino/TheMystic-Bot-MD';
+global.wm2 = `${dia} ${fecha}\nNami - Bot`;
+global.gt = 'NamiBot-MD';
+global.mysticbot = 'NamiBot-MD';
+global.md = 'https://whatsapp.com/channel/0029VaAN15BJP21BYCJ3tH04';
+global.mysticbot = 'https://whatsapp.com/channel/0029VaAN15BJP21BYCJ3tH04';
 global.waitt = '*[ ⏳ ] Cargando...*';
 global.waittt = '*[ ⏳ ] Cargando...*';
 global.waitttt = '*[ ⏳ ] Cargando...*';
