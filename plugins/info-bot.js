@@ -1,17 +1,74 @@
-import fs from 'fs';
-const handler = (m) => m;
-handler.all = async function(m) {
-  const vn = './media/bot.mp3';
-  const chat = global.db.data.chats[m.chat];
-  //const s = seconds: '4556'
-  // const estilo = { key: {  fromMe: false, participant: `0@s.whatsapp.net`, ...(m.chat ? { remoteJid: "5219992095479-1625305606@g.us" } : {}) }, message: {orderMessage: { itemCount : -999999, status: 1, surface : 1, message: '𝑇ℎ𝑒 𝑀𝑦𝑠𝑡𝑖𝑐 - 𝐵𝑜𝑡', orderTitle: 'Bang', thumbnail: fs.readFileSync('./Menu2.jpg'), sellerJid: '0@s.whatsapp.net'}}}
-  // const estiloaudio = { key: {  fromMe: false, participant: `0@s.whatsapp.net`, ...(m.chat ? { remoteJid: "5219992095479-1625305606@g.us" } : {}) }, message: {"audioMessage": { "mimetype":"audio/ogg; codecs=opus", "seconds": "99569", "ptt": "true"}}}
-  if (/^bot$/i.test(m.text) && !chat.isBanned) {
-    conn.sendPresenceUpdate('recording', m.chat);
-    await m.reply(`*Hola, ¿Cómo puedo ayudarte?*`);
-    m.conn.sendMessage(m.chat, {audio: {url: vn}, fileName: 'error.mp3', mimetype: 'audio/mpeg', ptt: true}, {quoted: m});
-    // conn.sendFile(m.chat, vn, 'bot.mp3', null, m, true, { type: 'audioMessage', seconds: '4556', ptt: true, sendEphemeral: true, quoted: m })
-  }
-  return !0;
-};
-export default handler;
+import { generateWAMessageFromContent } from '@whiskeysockets/baileys'
+import os from 'os'
+import util from 'util'
+import sizeFormatter from 'human-readable'
+import MessageType from '@whiskeysockets/baileys'
+import fs from 'fs'
+import { performance } from 'perf_hooks'
+let handler = async (m, { conn, usedPrefix }) => {
+let _uptime = process.uptime() * 1000
+let uptime = clockString(_uptime) 
+let totalreg = Object.keys(global.db.data.users).length
+const chats = Object.entries(conn.chats).filter(([id, data]) => id && data.isChats)
+const groupsIn = chats.filter(([id]) => id.endsWith('@g.us'))
+const groups = chats.filter(([id]) => id.endsWith('@g.us'))
+const used = process.memoryUsage()
+const { restrict, antiCall, antiprivado, modejadibot } = global.db.data.settings[conn.user.jid] || {}
+const { autoread, gconly, pconly, self } = global.opts || {}
+let old = performance.now()
+let neww = performance.now()
+let pp = './storage/logos/Menu1.jpg'
+let speed = neww - old
+let info = `
+*📑 INFO NamiBot-MD*
+
+👑 *CREADOR*
+ *Alba070503*
+--------------------------
+🥏 *CONTACTO* 
+ *wa.me/+59177601773*
+--------------------------
+🌐 *VERSIÓN ACTUAL*
+ *2.0*
+--------------------------
+💻 *PREFIJO*
+ *${usedPrefix}*
+--------------------------
+🚦 *CHATS PRIVADOS*
+ *${chats.length - groups.length}*
+--------------------------
+📑 *CHATS GRUPALES*
+ *${groups.length}* 
+--------------------------
+💬 *CHATS EN TOTAL*
+ *${chats.length}* 
+--------------------------
+⏰ *ACTIVIDAD*
+ *${uptime}*
+--------------------------
+👥 *USUARIOS*
+ *${totalreg}* 
+--------------------------
+🚀 *VELOCIDAD:*
+ *${speed}*
+--------------------------
+📡 *AUTOREAD:*
+ ${autoread ? '*Habilitado ✅*' : '*Deshabilitado ❌*'}
+--------------------------
+🔰 *RESTRICT:*
+${restrict ? '*Habilitado ✅*' : '*Deshabilitado ❌*'}`.trim() 
+let aa = { quoted: m, userJid: conn.user.jid }
+let res = generateWAMessageFromContent (m.chat, {liveLocationMessage: {degreesLatitude: 0, degreesLongitude: 0, caption: info, secuenceNumber: "0", contextInfo: {mentionedJid: conn.parseMention()}}}, aa)
+conn.relayMessage(m.chat, res.message, {})
+}
+handler.help = ['infobot', 'speed']
+handler.tags = ['main']
+handler.command = /^(infobot|Infobot)$/i
+export default handler
+
+function clockString(ms) {
+let h = Math.floor(ms / 3600000)
+let m = Math.floor(ms / 60000) % 60
+let s = Math.floor(ms / 1000) % 60
+console.log({ms,h,m,s})
+return [h, m, s].map(v => v.toString().padStart(2, 0) ).join(':')}
