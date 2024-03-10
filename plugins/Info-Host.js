@@ -11,8 +11,8 @@ https://dash.cafirexos.com/login
 🧑🏻‍💻 *Cualquier información ingrese a este grupo:*
 https://chat.whatsapp.com/FBtyc8Q5w2iJXVl5zGJdFJ
 
-📱*información:*
-wa.me/50497160165
+📱*Mas Información:*
+wa.me/50497150165
 
 🔮 *Canal:*
 https://www.whatsapp.com/channel/0029Va8ZD6O3mFXxTPl1m13A`.trim();
