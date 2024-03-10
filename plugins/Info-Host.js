@@ -8,11 +8,14 @@ _Te quería informarte que la instalación de estas versiones ha sido aprobada y
 🖥️ *Plataforma:*
 https://dash.cafirexos.com/login
 
-🧑🏻‍💻 *Cualquier Información entra a este grupo:*
+🧑🏻‍💻 *Cualquier información ingrese a este grupo:*
 https://chat.whatsapp.com/FBtyc8Q5w2iJXVl5zGJdFJ
 
+📱*información:*
+wa.me/50497160165
+
 🔮 *Canal:*
-https://www.whatsapp.com/channel/0029Va8ZD6O3mFXxTPl1m13A _*`.trim();
+https://www.whatsapp.com/channel/0029Va8ZD6O3mFXxTPl1m13A`.trim();
   const buttonMessage= {
     'document': {url: `https://github.com/BrunoSobrino/TheMystic-Bot-MD`},
     'mimetype': `application/${document}`,
@@ -26,7 +29,7 @@ https://www.whatsapp.com/channel/0029Va8ZD6O3mFXxTPl1m13A _*`.trim();
         'mediaUrl': 'https://github.com/BrunoSobrino/TheMystic-Bot-MD',
         'mediaType': 2,
         'previewType': 'pdf',
-        'title': 'ᴇʟ ᴍᴇᴊᴏʀ ʙᴏᴛ ᴅᴇ ᴡʜᴀᴛsᴀᴘᴘ⁩',
+        'title': 'El Mejor Hosting 🚀⁩',
         'body': wm,
         'thumbnail': imagen1,
         'sourceUrl': 'https://www.youtube.com/channel/UCSTDMKjbm-EmEovkygX-lCA'}},
