@@ -21,11 +21,9 @@ https://dash.cafirexos.com/login
 https://chat.whatsapp.com/FBtyc8Q5w2iJXVl5zGJdFJ
 
 🔮 *Canal:*
-https://www.whatsapp.com/channel/0029Va8ZD6O3mFXxTPl1m13A _*
-
-`.trim(), m)
+https://www.whatsapp.com/channel/0029Va8ZD6O3mFXxTPl1m13A _*`.trim(), m)
 }
-handler.help = ['host']
+handler.help = ['infohost']
 handler.tags = ['General']
 handler.command = /^(infohost?)$/i
 
