@@ -7,25 +7,46 @@ let handler  = async (m, { conn, usedPrefix }) => {
   let uptime = clockString(_uptime) 
   let totalreg = Object.keys(global.DATABASE._data.users).length
   let old = Math.round(performance.now())
-  await m.reply('*_CUALQUIER DUDA O AYUDA QUE NECESITES CONTACTEME CON EL SIGUIENTE LINK: wa.me/50497160165_*')
+  await m.reply('*_CUALQUIER DUDA O AYUDA QUE NECESITES CONTACTEME CON EL SIGUIENTE LINK: wa.me/14509001764_*')
   let neww = Math.round(performance.now())
   conn.reply(m.chat, `
-*_Hola a todos 👋🏻 ¡Estamos emocionados de anunciar nuestra nueva colaboración con Cafirexos  🤖 Ahora ya pueden tener su propio bot de *THE-MYSTIC-BOT-MD* en su plataforma en línea, permitiendo  que tus bots estén activos las 24/7. 💻_
+*_GRACIAS POR INTERESARTE EN INSTALAR THE SHADOW BROKERS - BOT_*
 
-_Te quería informarte que la instalación de estas versiones ha sido aprobada y ya está en pleno funcionamiento. Además, *los servidores son totalmente compatibles, lo que te permite elegir el tipo de inicio del bot según tus necesidades.* ¡Prepárate para una experiencia de usuario ininterrumpida y emocionante!_ 
+*◄┢┅͜͡✇⟬↯ື ►ஜ۩💥۩ஜ◄ ↯ື⟭✇͜͡┅┧►*
 
-🖥️ *Plataforma:*
-https://dash.cafirexos.com/login
+_VIDEO TUTORIAL DE INSTALACIÓN: https://youtu.be/dP8-aaHinBE_
 
-🧑🏻‍💻 *Cualquier Información entra a este grupo:*
-https://chat.whatsapp.com/FBtyc8Q5w2iJXVl5zGJdFJ
+_ARCHIVOS DEL BOT: En la despcripcion del video encuentras el enlace actualizado, link directo a mediafire_
 
-🔮 *Canal:*
-https://www.whatsapp.com/channel/0029Va8ZD6O3mFXxTPl1m13A _*`.trim(), m)
+_^‿^ REQUISITO PARA INSTALAR EL BOT ^‿^_
+_( ͡° ͜ʖ ͡°) Termux_
+_( ͡° ͜ʖ ͡°) Descomprimidor de archivos (recomiendo ZArchiver)_
+_( ͡° ͜ʖ ͡°) 1.5 GB de memoria en el teléfono_
+_( ͡° ͜ʖ ͡°) Un WhatsApp secundario_
+_( ͡° ͜ʖ ͡°) 2 teléfonos o un 1 teléfono y una PC_
+
+*◄┢┅͜͡✇⟬↯ື ►ஜ۩💥۩ஜ◄ ↯ື⟭✇͜͡┅┧►*
+
+💥 𝐂𝐎𝐌𝐀𝐍𝐃𝐎𝐒 𝐃𝐄 𝐈𝐍𝐒𝐓𝐀𝐋𝐀𝐂𝐈𝐎𝐍 💥
+- pkg update && pkg upgrade
+- pkg install git -y
+- pkg install nodejs -y
+- pkg install ffmpeg -y
+- pkg install imagemagick -y
+- termux-setup-storage
+- cd storage/downloads/Shadow
+- npm install
+- npm install -g npm@8.1.4
+- npm update
+- npm start
+° Escaneas el código QR tienes 30 segundos para hacerlo
+
+*◄┢┅͜͡✇⟬↯ື ►ஜ۩💥۩ஜ◄ ↯ື⟭✇͜͡┅┧►*
+`.trim(), m)
 }
-handler.help = ['infohost']
+handler.help = ['instalarbot']
 handler.tags = ['General']
-handler.command = /^(infohost?)$/i
+handler.command = /^(instalarbot?)$/i
 
 handler.fail = null
 
