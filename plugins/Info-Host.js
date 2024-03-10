@@ -1,5 +1,5 @@
 const handler = async (m, {conn}) => {
-  m.reply(global.terminos);
+  m.reply(global.host);
 };
 handler.customPrefix = /infohost|host|Host|cafirexos|Cafirexos/i;
 handler.command = new RegExp;
