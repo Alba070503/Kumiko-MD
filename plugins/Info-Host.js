@@ -25,7 +25,7 @@ https://wa.me/50497150165
 *Correo Electrónico*
 contacto@cafirexos.com
 *Canal de WhatsApp*
-Para ver mas información de actualizaciónes de la página recomiendo hacer click en donde dice ver canal ⬇️⬇️
+https://whatsapp.com/channel/0029VaFVSkRCMY0KFmCMDX2q
 `.trim();
   const buttonMessage= {
     'document': {url: `https://github.com/BrunoSobrino/TheMystic-Bot-MD`},
