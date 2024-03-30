@@ -55,6 +55,7 @@ global.APIKeys = {
   'https://api.ibeng.tech/docs': 'tamvan',
   'https://api.itsrose.site': 'Rs-Zeltoria',
   'https://api-xcoders.site': 'Frieren',
+  'https://apikasu.onrender.com': 'ApiKey',
   'https://api.xyroinee.xyz': 'uwgflzFEh6'
 };
 
