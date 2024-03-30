@@ -2,19 +2,19 @@ import fetch from 'node-fetch';
 
 const handler = async (m, { conn, text }) => {
   if (!text) {
-    throw 'Por favor, proporciona un texto para enviar a ChatGPT4.';
+    throw 'Por favor, proporciona un texto para enviar a Gemini.';
   }
 
   try {
     conn.sendPresenceUpdate('composing', m.chat);
 
-    const apiUrl = `${apikasu}/api/tools/chatgpt-4?text=${encodeURIComponent(text)}&apikey=${apikeykasu}`;
+    const apiUrl = `${apikasu}/api/tools/gemini?text=${encodeURIComponent(text)}&apikey=${apikeykasu}`;
     const response = await fetch(apiUrl);
     const data = await response.json();
 
     if (data.result) {
       m.reply(`
-> ChatGPT 4
+> Gemini AI
 
 ${data.result}`);
     } else {
@@ -31,8 +31,8 @@ Ocurrió un error: ${error}`;
   }
 };
 
-handler.help = ['chatgpt4'];
+handler.help = ['gemini'];
 handler.tags = ['ai'];
-handler.command = /^chatgpt4$/i;
+handler.command = /^gemini$/i;
 
 export default handler;
