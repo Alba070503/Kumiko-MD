@@ -58,6 +58,34 @@ global.imagen5 = fs.readFileSync('./src/+18.jpg');
 global.imagen6 = fs.readFileSync('./Menu3.png');
 
 global.mods = [];
+//⊱ ━━━━━.⋅ Versión | Nombre | cuentas ⋅.━━━━ ⊰
+
+global.vs = "1.3"
+global.vsJB = "2.5 (Beta)"
+
+global.gt = "NamiBot-MD"
+global.yt = "https://youtube.com/@Alba070503"
+global.yt2 = "https://www.tiktok.com/@alba070503?_t=8izt99evT9C&_r=1"
+global.ig = "https://www.instagram.com/Alba070503"
+global.md = "https://github.com/Alba070503/Kumiko-MD"
+global.fb = "https://whatsapp.com/channel/0029VaAN15BJP21BYCJ3tH04"
+
+global.nna = 'https://whatsapp.com/channel/0029VaAN15BJP21BYCJ3tH04' //CANAL UPDATE
+global.nn2 = 'https://whatsapp.com/channel/0029VaAN15BJP21BYCJ3tH04' //Canal GataBot
+global.nna2 = 'https://whatsapp.com/channel/0029VaAN15BJP21BYCJ3tH04' //Help
+global.nn = 'https://whatsapp.com/channel/0029VaAN15BJP21BYCJ3tH04' //Grupo 1
+global.nnn = 'https://whatsapp.com/channel/0029VaAN15BJP21BYCJ3tH04' //Grupo 2
+global.nnnt = 'https://whatsapp.com/channel/0029VaAN15BJP21BYCJ3tH04' //Grupo 3
+global.nnntt = 'https://whatsapp.com/channel/0029VaAN15BJP21BYCJ3tH04' //Grupo 4
+global.nnnttt = 'https://whatsapp.com/channel/0029VaAN15BJP21BYCJ3tH04' //Grupo 5
+global.nnnttt1 = 'https://whatsapp.com/channel/0029VaAN15BJP21BYCJ3tH04'; //Grupo 6 COL
+global.nnnttt2 = 'https://whatsapp.com/channel/0029VaAN15BJP21BYCJ3tH04' //Grupo 7 COL
+global.nnnttt3 = 'https://whatsapp.com/channel/0029VaAN15BJP21BYCJ3tH04' //Grupo 8 COL
+global.nnnttt4 = 'https://whatsapp.com/channel/0029VaAN15BJP21BYCJ3tH04' //Grupo 9 COL
+global.nnnttt5 = 'https://whatsapp.com/channel/0029VaAN15BJP21BYCJ3tH04' //A.T.M.M
+global.paypal = 'https://paypal.me/Alba070503'
+global.asistencia = 'Wa.me/59177601773' //Dudas? escríbeme...
+
 
 //* *******Tiempo***************
 global.d = new Date(new Date + 3600000);
