@@ -382,8 +382,8 @@ global.reloadHandler = async function(restatConn) {
     conn.ev.off('creds.update', conn.credsUpdate);
   }
 
-  conn.welcome = lenguajeGB['smsWelcome']() 
-  conn.bye = lenguajeGB['smsBye']() 
+  conn.welcome = '*╭┈⊰* @subject *⊰┈ ✦*\n*┊✨ BIENVENIDO(A)!!*\n┊🎉 @user\n┊📄 *LEA LA DESCRIPCIÓN DEL GRUPO*\n*╰┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ ✦*\n${String.fromCharCode(8206).repeat(850)}\n@desc';
+  conn.bye = '*╭┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈⊰*\n┊ @user\n┊ *, SE SALIO DEL GRUPO , NOS VEMOS!!* 😎\n*╰┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈⊰*'';
   conn.spromote = '*[ ℹ️ ] @user Fue promovido a administrador.*';
   conn.sdemote = '*[ ℹ️ ] @user Fue degradado de administrador.*';
   conn.sDesc = '*[ ℹ️ ] La descripción del grupo ha sido modificada.*';
